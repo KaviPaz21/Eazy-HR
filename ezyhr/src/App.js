@@ -1,14 +1,11 @@
+import React from "react";
+
+import Dashboardadmin from "./interfaces/dashboard-admin";
+import Admin_navbar from "./components/Admin_Navbar";
 
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-
-
-
-
-    </div>
-  );
+    <Admin_navbar/>
+  )
 }
-
-export default App;

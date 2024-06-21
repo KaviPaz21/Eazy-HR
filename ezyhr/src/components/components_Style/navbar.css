@@ -1,0 +1,160 @@
+.navheader{grid-area: position;}
+.recrutments{grid-area: rec;}
+.organization{grid-area: org;}
+.Manage{grid-area: mng;}
+.dashboard{grid-area: dsh;}
+.Other{grid-area: oth;}
+.logout{grid-area: logout;}
+
+.navbar{
+    background-color: rgb(244, 247, 255);
+    width: 11vw;
+    margin: 1em;
+    display: grid;
+    place-content: left;
+    grid-template-areas: 
+    'position'
+    'dsh'
+    'rec' 
+    'org'
+    'mng' 'oth' 'logout';
+    padding: 1em 2em;
+    height: 93vh;
+    border-radius: 15px;
+    
+}
+.role_icon{
+    float: left;
+    width: 25px;
+    padding-right: 15px;
+}
+.mtopic , .dashboard ,.logout{
+    font-weight: 550;
+    color: rgb(54, 50, 50);
+}
+.position{
+    font-size: 18px;
+    font-weight: 550;
+}
+
+.element{
+    padding-top: 10px;
+}
+.element_Name{
+    font-weight: 550;
+}
+.icon{
+    width: 22px;
+    float: left;
+    padding: 0px 15px;
+}
+#empelements{
+    display: none;
+    transition: .4s all;
+}
+
+
+/*<div className="navbar">
+        <div className="navheader">
+          <img src={user} alt="user icon" className="role_icon" />
+          <div className="position">HR Manager</div>
+        </div>
+        <div className="dashboard">Dashboard</div>
+        <div className="recrutments">
+          <div className="mtopic" id='emp_topic'onClick={()=>elementDisplay(0)}>Employee Management</div>
+
+          <div className="elements" id='empelements'>
+            <div className="element">
+              <img src={jobprofile} alt="jb profile" className="icon" />
+              <div className="element_Name">Job Profile View</div>
+            </div>
+            <div className="element">
+              <img src={vacancy} alt="jb profile" className="icon" />
+              <div className="element_Name">Vacancies</div>
+            </div>
+            <div className="element">
+              <img src={applications} alt="jb profile" className="icon" />
+              <div className="element_Name">Applications</div>
+            </div>
+            <div className="element">
+              <img src={applicant} alt="jb profile" className="icon" />
+              <div className="element_Name">Add Employee</div>
+            </div>
+            <div className="element">
+              <img src={jobprofile} alt="jb profile" className="icon" />
+              <div className="element_Name">Designation Roles</div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <div className="organization">
+          <div className="mtopic">Organization</div>
+          <div className="elements">
+            <div className="element">
+              <img src={jobprofile} alt="jb profile" className="icon" />
+              <div className="element_Name">Attendance</div>
+            </div>
+            <div className="element">
+              <img src={vacancy} alt="jb profile" className="icon" />
+              <div className="element_Name">Leave</div>
+            </div>
+            <div className="element">
+              <img src={applications} alt="jb profile" className="icon" />
+              <div className="element_Name">Salary Management</div>
+            </div>
+            <div className="element">
+              <img src={applicant} alt="jb profile" className="icon" />
+              <div className="element_Name">Bonus & Increments</div>
+            </div>
+            <div className="element">
+              <img src={jobprofile} alt="jb profile" className="icon" />
+              <div className="element_Name">Salary Reports</div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div className="Manage">
+          <div className="mtopic">Peformance Management</div>
+          <div className="elements">
+            <div className="element">
+              <img src={jobprofile} alt="jb profile" className="icon" />
+              <div className="element_Name">Employee Evaluations</div>
+            </div>
+            <div className="element">
+              <img src={vacancy} alt="jb profile" className="icon" />
+              <div className="element_Name">Goal Setting</div>
+            </div>
+            <div className="element">
+              <img src={applications} alt="jb profile" className="icon" />
+              <div className="element_Name">Performance Reports</div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div className="Other">
+          <div className="mtopic">Other</div>
+          <div className="elements">
+            <div className="element">
+              <img src={jobprofile} alt="jb profile" className="icon" />
+              <div className="element_Name">Password Change</div>
+            </div>
+            <div className="element">
+              <img src={vacancy} alt="jb profile" className="icon" />
+              <div className="element_Name">Analytics</div>
+            </div>
+            <div className="element">
+              <img src={applications} alt="jb profile" className="icon" />
+              <div className="element_Name">Interview Schdule</div>
+            </div>
+          </div>
+        </div>
+        <div className="logout">LOG OUT</div>
+      </div>*/
