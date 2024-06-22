@@ -8,6 +8,9 @@ module.exports = {
       
       height:{
         '97':'96vh'
+      },
+      fontSize:{
+        'nv18':'18px'
       }
     },
   },
