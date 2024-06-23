@@ -27,7 +27,7 @@ export default function Admin_navbar() {
 
   return (
     <div>
-      <div className={`${expand ? "w-72" : "w-24"} bg-gray-100 duration-300 shadow-1xl h-screen align-middle relative px-6 py-7`}>
+      <div className={`${expand ? "w-72 mr-4" : "w-24 mr-24"} bg-gray-100 duration-300 shadow-1xl h-screen align-middle relative px-6 py-7`}>
         <img src={arrow} alt="expand" className={`${expand ? "rotate-180" : "rotate-0"} w-8 absolute -right-3 top-6 cursor-pointer`} onClick={() => setexpand(!expand)} />
 
         <div className='h-2 flex gap-x-1'>
@@ -35,14 +35,14 @@ export default function Admin_navbar() {
           <span className={`${!expand && "scale-0"} text-gray-900 font-bold align-middle py-1 duration-300 origin-left text-2xl`}>HR Manager</span>
         </div>
         <br />
-        <div className={` ${click===0 ? "text-blue-700 bg-gray-200":"text-gray-700"} flex gap-x-0 mt-8 px-2 py-1  hover:bg-gray-200 cursor-pointer rounded-lg`} onClick={()=> setclick(0)}>
+        <div className={` ${click===0 ? "text-blue-700 bg-gray-200 ":"text-gray-700"} flex gap-x-0 mt-8 px-2 py-1  hover:bg-gray-200 cursor-pointer rounded-lg`} onClick={()=> setclick(0)}>
           <img src={dashboard} className="w-8 h-8" />
           <span className={`${!expand && "scale-0"}  pl-4 font-bold align-middle py-1 duration-300 origin-left text-xl`}>Dashboard</span>
         </div>
 
 
 
-        <div className={`${click===1 ? "text-blue-700 bg-gray-200":"text-gray-700"} flex gap-x-0 mt-4 px-2 py-0  hover:bg-gray-200 cursor-pointer rounded-lg`} onClick={()=> setclick(1)}>
+        <div className={`${click===1 ? "text-blue-700 bg-gray-200":"text-gray-700"} flex gap-x-0 mt-4 px-2 py-0  hover:bg-gray-200  cursor-pointer rounded-lg`} onClick={()=> setclick(1)}>
           <img src={notifications} className={`w-7 h-7 my-1`} />
           <span className={`${!expand && "scale-0"}  pl-4 py-1 font-semibold align-middle  duration-300 origin-left text-nv18`}>Notifications</span>
         </div>

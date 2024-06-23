@@ -6,6 +6,6 @@ import Admin_navbar from "./components/Admin_Navbar";
 
 export default function App() {
   return (
-    <Admin_navbar/>
+    <Dashboardadmin/>
   )
 }
