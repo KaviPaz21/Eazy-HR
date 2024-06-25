@@ -31,11 +31,11 @@ export default function Dashboardadmin() {
 
         <div id='line-02' className=' mt-12 flex flex-auto gap-x-7 mx-8 rounded-xl h-32 w-auto'>
           <div className='bg-blue-800 w-72  py-6 px-8 text-center text-white font-sans rounded-2xl'>
-            <div className='text-6xl font-bold'>12</div>
+            <div className='text-6xl font-bold'>142</div>
             <span className='mt-4 text-xl '>Total Employees</span>
           </div>
           <div className='bg-blue-800 w-72 py-6 px-8 text-center text-white font-sans rounded-2xl'>
-            <div className='text-6xl font-bold'>12</div>
+            <div className='text-6xl font-bold'>101</div>
             <span className='mt-4 text-xl '>Attendance On Today</span>
           </div>
           <div className='bg-blue-800 w-72 py-6 px-8 text-center text-white font-sans rounded-2xl'>
@@ -43,11 +43,11 @@ export default function Dashboardadmin() {
             <span className='mt-4 text-xl '>Recent Applications</span>
           </div>
           <div className='bg-blue-800 w-72 py-6 px-8 text-center text-white font-sans rounded-2xl'>
-            <div className='text-6xl font-bold'>12</div>
+            <div className='text-6xl font-bold'>24</div>
             <span className='mt-4 text-xl '>Pending Leaves</span>
           </div>
           <div className='bg-blue-800 w-72 py-6 px-8 text-center text-white font-sans rounded-2xl'>
-            <div className='text-6xl font-bold'>12</div>
+            <div className='text-6xl font-bold'>41</div>
             <span className='mt-4 text-xl '>Employees on Leave</span>
           </div>
 
