@@ -8,15 +8,16 @@ import './styles.css'
 import Dashboardresigntable from '../components/dashboard-resign-table';
 import Dashboardleavetable from '../components/dashboard-leave-table';
 import Dashboardmeetings from '../components/components_Style/dashboard-meetings';
+import Dashboardinterviewstable from '../components/components_Style/dashboard-interviews-table';
 
 export default function Dashboardadmin() {
   const date = Date()
   const formattedDate = format(date, 'EEE MMM dd yyyy')
   const attendance_percentage= ((101/142)*100).toFixed(1)
   return (
-    <div className='flex text-center h-screen overflow-hidden'>
-      <Admin_navbar className="left-0 fixed" />
-      <div className={`ml-0 my-4 top-5 bg-slate-50 rounded-xl w-10/12 h-auto overflow-y-auto hide-scrollbar`} >
+    <div >
+      
+      <div className={`ml-0 pl-2 my-4 top-5 bg-slate-100 rounded-xl  h-auto overflow-y-auto hide-scrollbar`} >
 
 
         <div id='line-01' className=' mt-4 flex gap-x-96 pl-4'>
@@ -25,7 +26,7 @@ export default function Dashboardadmin() {
             <div className='pt-2 text-18nv text-gray-600 font-serif'>Here is an overview of your dashboard today</div>
           </div>
 
-          <div className=' text-right ml-48'>
+          <div className=' text-right ml-96'>
             <span className='font-semibold text-2xl'>Employee attendance :</span>
             <span className='text-8xl font-sans font-bold'><CountUp end={attendance_percentage} duration={3}/>%</span>
           </div>   
@@ -65,30 +66,12 @@ export default function Dashboardadmin() {
         <div id='line3' className='w-auto mt-12 flex gap-x-1 ml-2'>
           <div className='ml-2 bg-white rounded-xl p-5 text-left'>
             <span className='text-c20 font-bold text-black text-left'>Upcoming Interviews</span>
-            <div className='pl-5 flex text-left gap-x-14'>
-              <div className='text-c17 font-medium pt-5 text-gray-800'>
-                <ul>
-                  <li className='p-1 '>Pasindu Kavinda <br /> <div className='text-sm text-gray-500 font-normal'>AI Engineer</div></li>
-                  <li className='p-1'>JK Fernando <br /> <div className='text-sm text-gray-500 font-normal'>UI/UX Designer</div></li>
-                  <li className='p-1'>Asitha Perera <br /> <div className='text-sm text-gray-500 font-normal'>UI/UX Designer</div></li>
-                  <li className='p-1'>Ashoka Pathirana<br /> <div className='text-sm text-gray-500 font-normal'>UI/UX Designer</div> </li>
-                </ul>
-              </div>
-
-              <div className='text-c16 font-normal pt-5 text-'>
-                <ul className='ml-10'>
-                  <li className=' mt-2 p-0 px-2 border-2 border-blue-600 rounded-2xl text-blue-600 font-medium hover:bg-blue-600 hover:text-white duration-300'> 09.00-09.30</li>
-                  <li className=' mt-7 p-0 px-2 border-2 border-blue-600 rounded-2xl text-blue-600 font-medium'> 09.30-10.00</li>
-                  <li className=' mt-6 p-0 px-2 border-2 border-blue-600 rounded-2xl text-blue-600 font-medium'> 09.30-10.00</li>
-                  <li className=' mt-7 p-0 px-2 border-2 border-blue-600 rounded-2xl text-blue-600 font-medium'> 09.30-10.00</li>
-                </ul>
-              </div>
-            </div>
-            <button className='py-1 ml-6 px-2 mt-9 bg-blue-600 text-white font-normal rounded-md hover:scale-105 duration-300'>See More...</button>
+            <Dashboardinterviewstable/>
+            <button className='py-1 ml-6 px-2 mt-2 bg-blue-600 text-white font-normal rounded-md hover:scale-105 duration-300'>See More...</button>
           </div>
 
 
-          <div id='resignations' className='ml-2 bg-white rounded-xl p-5 text-left'>
+          <div id='resignations' className='ml-2 bg-white rounded-xl p-5 h-auto text-left'>
             <span className='text-c20 font-bold text-black text-left'>Submitted Resignations</span>
             <div>
               <Dashboardresigntable />
@@ -100,7 +83,7 @@ export default function Dashboardadmin() {
         </div>
 
 
-        <div id='line3' className=' mt-12 flex flex-auto gap-x-2 mx-2 rounded-xl h-32 w-auto'>
+        <div id='line3' className=' mt-12 flex flex-auto gap-x-2 mx-2 rounded-xl h-auto w-auto'>
 
           <div id='Leaves' className='ml-2 bg-white rounded-xl p-5 text-left'>
             <span className='text-c20 font-bold text-black text-left'>Leave Requests</span>

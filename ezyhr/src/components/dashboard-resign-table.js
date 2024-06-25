@@ -5,14 +5,14 @@ export default function Dashboardresigntable() {
     <div>
       <table className='w-auto text-center mt-4'>
                 <tr className='border-b-2 border-gray-200 h-12'>
-                  <th className='px-2 w-36'>Name</th>
-                  <th className='px-2 w-28'>Employee ID</th>
+                  <th className='px-2 w-40'>Name</th>
+                  <th className='px-2 w-32'>Employee ID</th>
                   <th className='px-2 w-32'>Position</th>
-                  <th className='px-2 w-40'>Reason</th>
+                  <th className='px-2 w-48'>Reason</th>
                   <th className='px-2 w-36'>Noticed Date</th>
                   <th className='px-2 w-36'>Resigning Date</th>
-                  <th className='px-2 w-32' >Status</th>
-                  <th className='px-2 w-32'>Action</th>
+                  <th className='px-2 w-36' >Status</th>
+                  <th className='px-2 w-36'>Action</th>
                 </tr>
 
                 <tr className='text-c16 h-12'>

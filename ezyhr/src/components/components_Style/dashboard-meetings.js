@@ -3,7 +3,7 @@ import React from 'react'
 export default function Dashboardmeetings() {
   return (
     <div>
-      <table className='w-auto text-center mt-4'>
+      <table className='w-auto text-center mt-4 h-auto'>
         <tr className='border-b-2 border-gray-200 h-12'>
           <th className='px-2 w-40' >Meeting Name</th>
           <th className='px-2 w-44' >Time</th>
