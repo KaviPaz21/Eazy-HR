@@ -10,8 +10,12 @@ module.exports = {
         '97':'96vh'
       },
       fontSize:{
-        'nv18':'18px'
+        'nv18':'18px',
+        'c16':'16px',
+        'c17':"17px",
+        'c20':"20px"
       }
+      
     },
   },
   plugins: [],
