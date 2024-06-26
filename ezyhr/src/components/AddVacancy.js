@@ -1,0 +1,104 @@
+import React, { useState } from 'react'
+
+export default function AddVacancy() {
+    const [exp, setexp] = useState(0)
+    const [inputFields, setInputFields] = useState(['']);
+
+
+
+    const addInputField = () => {
+        setInputFields([...inputFields, '']); // Add a new empty string to inputFields array
+    };
+    return (
+        <div className='pl-28 mt-10'>
+            <form action="">
+                <table className=''>
+                    <tr className='h-20'>
+                        <td className='text-nv18 text-gray-700 font-normal font-sans w-60'>Job Position</td>
+                        <td> <input type="text" className='bg-gray-100 w-cw500 py-4 pl-12 h-12 rounded-lg border-b-2 border-gray-400' /></td>
+                    </tr>
+                    <tr className='h-20'>
+                        <td className='text-nv18 text-gray-700 font-normal font-sans w-60'>Duration</td>
+                        <td className='text-gray-600'>
+                            <input type="radio" value="Full Time" name='duration' className='pr-4 mr-4' /><span className='mr-8'>Full Time</span>
+                            <input type="radio" value="half Time" name='duration' className='mr-4' /><span>Half</span>
+                        </td>
+                    </tr>
+                    <tr className='h-20'>
+                        <td className='text-nv18 text-gray-700 font-normal font-sans w-60'>Type</td>
+                        <td className='text-gray-600'>
+                            <select className='px-12 bg-gray-100 rounded-sm border-b-2 border-gray-400 text-gray-700 text-18nv'>
+                                <option value="Full" selected>Full Time</option>
+                                <option value="Agreee" >Agreement Based</option>
+                                <option value="Int" >Intern</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr className='h-20'>
+                        <td className='text-nv18 text-gray-700 font-normal font-sans w-60'>Venue</td>
+                        <td className='text-gray-600'>
+                            <input type="radio" value="Full Time" name='duration' className='pr-4 mr-4' /><span className='mr-8'>Onsite</span>
+                            <input type="radio" value="half Time" name='duration' className='mr-4' /><span>Remote</span>
+                        </td>
+                    </tr>
+
+                    <tr className='h-20'>
+                        <td className='text-nv18 text-gray-700 font-normal font-sans w-60'>Experience In Field</td>
+                        <td className='text-gray-600'>
+                            <input type="range" min="0" max="10" value={exp} onChange={(e) => { setexp(e.target.value) }} step={0.5} style={{ width: '500px' }} className=' px-0 bg-gray-100' /> <span>{exp} Years</span>
+                        </td>
+                    </tr>
+
+                    <tr className='h-20'>
+                        <td className='text-nv18 text-gray-700 font-normal font-sans w-60'>Requirments</td>
+                        <td className='text-gray-600'>
+                            
+                            {inputFields.map((field, index) => (
+                                <div key={index} className="mb-2">
+                                    <input type="text" className='bg-gray-100 w-cw500 py-4 pl-12 h-12 rounded-lg border-b-2 border-gray-400' />
+                                </div>
+                            ))}
+
+                            <button
+                                type="button" onClick={addInputField} className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-md mt-2 focus:outline-none">Create Another Requirment</button>
+                        </td>
+                    </tr>
+
+                    <tr className='h-20'>
+                        <td className='text-nv18 text-gray-700 font-normal font-sans w-60'>Special Announcements</td>
+                        <td> <textarea name="announce" className='bg-gray-100 w-cw500 h-32 mt-12'  ></textarea></td>
+                    </tr>            
+
+
+
+
+                    <tr className='h-20'>
+                        <td className='text-nv18 text-gray-700 font-normal font-sans w-60'>Closing Date</td>
+                        <td className='text-gray-600'>
+                            <input type="date" name="date" className='w-72 px-20 bg-gray-100 h-12' />
+
+                        </td>
+                    </tr>
+
+                    <tr className='h-20'>
+                        <td className='text-nv18 text-gray-700 font-normal font-sans w-60'>Publish Vacancy</td>
+                        <td className='text-gray-600'>
+                            <input type="date" name="date" className='w-72 px-20 bg-gray-100 h-12' />
+
+                        </td>
+                    </tr>
+
+                    <tr className='h-20'>
+                        <td className='text-nv18 text-gray-700 font-normal font-sans w-60'>Confirm Publish</td>
+                        <td className='text-gray-600'>
+                            <button type='submit' className='w-32 py-2 px-4 bg-blue-600 text-white rounded-xl hover:scale-105 hover:bg-blue-700 duration-300'>Confirm</button>
+
+                        </td>
+                    </tr>
+
+
+                </table>
+            </form>
+        </div>
+    )
+}
