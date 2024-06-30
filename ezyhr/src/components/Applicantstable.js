@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function PublishedVacancies() {
+export default function Applicantstable() {
     const vacancy = [
         ["UI/UX Engineer" , "Full Time" ,"Permenent", "Remote" , "2024-05-12" , "25" ,1,1,0],
         ["Marketing Manager" , "Full Time","Intern" , "On Site","2024-06-01","23",1,0,1],

@@ -56,10 +56,12 @@ export default function Admin_navbar() {
           </div>
         </Link>
 
+        <Link to="/Applicants">
         <div className={`${click === 3 ? "text-blue-700 bg-gray-200" : "text-gray-700"} flex gap-x-0 mt-4 px-2 py-0  hover:bg-gray-200 cursor-pointer rounded-lg`} onClick={() => setclick(3)}>
           <img src={applicant} className={`w-7 h-7 my-1`} />
           <span className={`${!expand && "scale-0"}  pl-4 py-1 font-semibold align-middle  duration-300 origin-left text-nv18`}>Applicants</span>
         </div>
+        </Link>
 
         <div className={`${click === 4 ? "text-blue-700 bg-gray-200" : "text-gray-700"} flex gap-x-0 h-10 mt-4 px-2 py-0  hover:bg-gray-200 cursor-pointer rounded-lg`} onClick={() => setclick(4)}>
           <img src={Attandance} className={`w-7 h-7 my-1`} />

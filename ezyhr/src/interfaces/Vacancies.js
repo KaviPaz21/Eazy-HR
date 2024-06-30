@@ -1,16 +1,13 @@
 import React, { useState } from 'react'
 import PublishedVacancies from '../components/Published-vacancies'
 import AddVacancy from '../components/AddVacancy'
+import { Link } from 'react-router-dom'
 
 export default function Vacancies() {
 
     const [current, setcurrent] = useState("")
     const [add, setadd]= useState(false)
     
-    const viewAddVacancy=()=>{
-        setcurrent("Publish Vacancy")
-        setadd(!add)
-    }
     return (
         <div className='flex flex-col text-left mt-4 bg-slate-100 rounded-xl'>
 
@@ -19,16 +16,12 @@ export default function Vacancies() {
                 <span className='font-semibold font-c17'>{current}</span>
             </div>
 
-            <div className={`${add && "scale-0"} w-cw92 ml-4 pl-8 mt-8 py-4 rounded-xl bg-white duration-300`}>
-                <span className=' font-sans font-semibold text-nv18 pr-12'>Publish New Job Vacancy :</span>
-                <button className='bg-blue-700 text-white px-8 rounded-xl py-2 duration-300 hover:scale-105 hover:bg-blue-800' onClick={viewAddVacancy}> Add +</button>
+            <div className={`${add && "scale-0"} w-cw95 ml-4 pl-8 mt-8 py-12 rounded-xl bg-white duration-300`}>
+                <span className=' font-sans font-semibold text-c20 pr-12'>Publish a New Job Vacancy :</span>
+                <Link to='/Vacancy/Publish_Vacancy'> <span className='bg-blue-700 w-32 text-white px-8 rounded-xl py-2 duration-300 hover:scale-105 hover:bg-blue-800'> Add +</span></Link>
             </div>  
 
-            <div className={`${add? "block":"hidden"} pl-8 mt-12 pt-8 ml-4 rounded-xl bg-white w-cw92`} >
-            <span className='text-2xl font-semibold'>Call New Vacancy</span>
-                <AddVacancy/>
-
-            </div>
+            
 
             <div className=' ml-4 pl-8 pt-8 mt-12 w-cw95 rounded-xl bg-white'>
                 <span className='text-2xl  font-semibold'>Published Vacancies</span>
