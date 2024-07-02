@@ -1,4 +1,5 @@
 import React from 'react'
+import Applicantstable from '../components/Applicantstable'
 
 export default function Applicants() {
     return (
@@ -14,7 +15,8 @@ export default function Applicants() {
 
 
             <div className=' ml-4 pl-8 mb-4 pt-8 mt-12 w-cw95 rounded-xl bg-white'>
-                <span className='text-2xl  font-semibold'>Published Vacancies</span>
+                <span className='text-2xl  font-semibold'>All Applicants</span>
+                <Applicantstable/>
        
             </div>
 
