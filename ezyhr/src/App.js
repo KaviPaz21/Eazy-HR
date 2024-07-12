@@ -8,6 +8,7 @@ import Layout from "./Layout";
 import AddVacancy from "./components/AddVacancy";
 import Applicants from "./interfaces/applicants";
 import ApplicantInfo from "./interfaces/ApplicantInfo";
+import Attendance from "./interfaces/attendance";
 
 
 
@@ -22,6 +23,7 @@ export default function App() {
           <Route path="/Vacancy/Publish_Vacancy" element={<AddVacancy />} />
           <Route path="/Applicants" element={<Applicants />} />
           <Route path="/Applicants/ApplicantInfo" element={<ApplicantInfo />} />
+          <Route path="/Attendance" element={<Attendance />} />
         </Route>
       </Routes>
     </BrowserRouter>

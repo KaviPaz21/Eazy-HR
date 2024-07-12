@@ -15,6 +15,7 @@ export default function Applicantstable() {
     ]
 
     const Seemore = (Reference)=>{
+        
         navigate("/Applicants/ApplicantInfo" , {state:Reference})
     }
    
@@ -49,7 +50,7 @@ export default function Applicantstable() {
                                     <button className='px-5 py-1 bg-green-600 text-white font-semibold rounded-2xl duration-300 hover:scale-105 hover:bg-green-700'>Call Interview</button>
                                 </td>
                                 <td className=' w-40 text-center'>
-                                    <button className='px-5 py-1 bg-blue-600 text-white font-semibold rounded-2xl duration-300 hover:scale-105 hover:bg-blue-700' onClick={()=>Seemore(sublist[3])}>About Applicant</button>
+                                    <button className='px-5 py-1 bg-blue-600 text-white font-semibold rounded-2xl duration-300 hover:scale-105 hover:bg-blue-700' onClick={()=>Seemore(sublist)}>About Applicant</button>
                                 </td>
                             </tr>
                         )

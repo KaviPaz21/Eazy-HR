@@ -1,17 +1,23 @@
-import React, { useState } from 'react'
+import React, { useState ,useEffect} from 'react'
 import { Link } from 'react-router-dom';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function AddVacancy() {
     const [exp, setexp] = useState(0)
     const [inputFields, setInputFields] = useState(['']);
-
+    useEffect(() => {
+        AOS.init({
+          duration: 500, // You can adjust this value for animation duration
+        });
+      }, []);
 
 
     const addInputField = () => {
         setInputFields([...inputFields, '']); // Add a new empty string to inputFields array
     };
     return (
-        <div className='pl-4 mt-4 flex flex-col text-left  bg-slate-100 rounded-xl'>
+        <div className='pl-4 mt-4 flex flex-col text-left  bg-slate-100 rounded-xl' data-aos="fade-up">
             <div className='pl-4 pt-4 text-gray-600'>
                 <span className='text-gray-700 font-c17 font-semibold'>Vacancies &gt;</span>
                 <span className='font-semibold font-c17'> Add Vacancy</span>

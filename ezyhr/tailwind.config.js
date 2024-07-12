@@ -7,7 +7,8 @@ module.exports = {
     extend: {
       
       height:{
-        '97':'96vh'
+        '97':'96vh',
+        'ch800':'800px'
       },
       fontSize:{
         'nv18':'18px',
@@ -16,6 +17,8 @@ module.exports = {
         'c20':"20px"
       },
       width:{
+        "cw98":"98%",
+        "cw96":"96%",
         "cw95":"95%",
         "cw93":"93%",
         "cw92":"92%",
